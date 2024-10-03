@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products - | Vitalys FashionShop |</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <link rel="icon" href="favicon (1).ico">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="/PHOTOS/logo3.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="account.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <img src="/PHOTOS/cart.png" width="30px" height="30px">
+                <img src="/PHOTOS/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        <!----------------cart items----------------------->
+
+
+        <div class="cart-page">
+
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="/PHOTOS/buy-1.jpg">
+                            <div>
+                                <p>Red Printed T-shirt</p>
+                                <small>Price: KSH50.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>KSH 5,550.00</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="/PHOTOS/buy-2.jpg">
+                            <div>
+                                <p>Sports Shoes</p>
+                                <small>Price: KSH75.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>KSH 7,540.00</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="/PHOTOS/buy-3.jpg">
+                            <div>
+                                <p>Black Lower</p>
+                                <small>Price: KSH75.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>KSH 7,505.00</td>
+
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>KSH 20,900.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>KSH 35,770.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>KSH 53,590.00</td>
+                    </tr>
+                </table>
+            </div>
+                         
+
+             <div class="cart-container">
+             
+                 <form action="">
+             
+                     <div class="row">
+             
+                         <div class="col">
+             
+                             <h3 class="title">billing address</h3>
+             
+                             <div class="inputBox">
+                                 <span>full name :</span>
+                                 <input type="text" placeholder="Vinnie Baite">
+                             </div>
+                             <div class="inputBox">
+                                 <span>email :</span>
+                                 <input type="email" placeholder="myassignment@example.com">
+                             </div>
+                             <div class="inputBox">
+                                 <span>address :</span>
+                                 <input type="text" placeholder="room - street - locality">
+                             </div>
+                             <div class="inputBox">
+                                 <span>city :</span>
+                                 <input type="text" placeholder="Nairobi">
+                             </div>
+             
+                             <div class="flex">
+                                 <div class="inputBox">
+                                     <span>state :</span>
+                                     <input type="text" placeholder="Kenya">
+                                 </div>
+                                 <div class="inputBox">
+                                     <span>zip code :</span>
+                                     <input type="text" placeholder="123 456">
+                                 </div>
+                             </div>
+             
+                         </div>
+             
+                         <div class="col">
+             
+                             <h3 class="title">payment</h3>
+             
+                             <div class="inputBox">
+                                 <span>cards accepted :</span>
+                                 <img src="PHOTOS/card_img.png" alt="">
+                             </div>
+                             <div class="inputBox">
+                                 <span>name on card :</span>
+                                 <input type="text" placeholder="Mr. Vinnie Baite">
+                             </div>
+                             <div class="inputBox">
+                                 <span>credit card number :</span>
+                                 <input type="number" placeholder="1111-2222-3333-4444">
+                             </div>
+                             <div class="inputBox">
+                                 <span>exp month :</span>
+                                 <input type="text" placeholder="january">
+                             </div>
+             
+                             <div class="flex">
+                                 <div class="inputBox">
+                                     <span>exp year :</span>
+                                     <input type="number" placeholder="2022">
+                                 </div>
+                                 <div class="inputBox">
+                                     <span>CVV :</span>
+                                     <input type="text" placeholder="1234">
+                                 </div>
+                             </div>
+             
+                         </div>
+                 
+                     </div>
+             
+                     <input type="submit" value="proceed to checkout" class="submit-btn">
+             
+                 </form>
+             
+             </div>    
+                 
+                  
+
+
+<!----------------------------------Footer----------------------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="/PHOTOS/play-store.png">
+                            <img src="/PHOTOS/app-store.png">
+
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="/PHOTOS/logo3.png">
+                        <p>We are here to suport make in India, and help our country grow.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blogs</li>
+                            <li>Return Policy</li>
+                            <li>Join Club</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Join Our Community</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+<!----------------------JS for toggle menu--------------------->
+        <script>
+            var MenuItems=document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight="0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight=="0px")
+                    {
+                        MenuItems.style.maxHeight="200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight="0px";
+                    }
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
